@@ -5,6 +5,6 @@ function getRepositories() {
     req.send()
 }
 
-function showRepositories() {
-
+function showRepositories(el) {
+    console.log(this)
 }
