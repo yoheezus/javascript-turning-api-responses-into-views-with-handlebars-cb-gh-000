@@ -5,6 +5,8 @@ function getRepositories() {
     req.send()
 }
 
-function showRepositories(el) {
-    console.log(this)
+function showRepositories(event, data) {
+    const repos = JSON.parse(this.responseText)
+    const repoList = `<ul>${repos.map(r => '<li>' + r.name + '</li>').join("")}</ul>`
+
 }
